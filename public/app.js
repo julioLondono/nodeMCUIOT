@@ -1,13 +1,13 @@
 (function() {
     // Set the configuration for your app
     var config = {
-        apiKey: "AIzaSyDGPhGJBk2GP-FbJ8WW7Mcae8vAAcMeUkM",
-        authDomain: "iotdemo-ae02f.firebaseapp.com",
-        databaseURL: "https://iotdemo-ae02f.firebaseio.com",
-        projectId: "iotdemo-ae02f",
-        storageBucket: "iotdemo-ae02f.appspot.com",
-        messagingSenderId: "179280005388",
-        appId: "1:179280005388:web:d6d60eed07059f87786129"
+        apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        authDomain: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.firebaseapp.com",
+        databaseURL: "XXXXXXXXXXXXXXXXXXXXX.firebaseio.com",
+        projectId: "iXXXXXXXXXXXXXXX",
+        storageBucket: "XXXXXXXXXXXXXXXXX.appspot.com",
+        messagingSenderId: "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        appId: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     };
 
     firebase.initializeApp(config);
