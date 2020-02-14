@@ -9,7 +9,6 @@
               href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
               integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
               crossorigin="anonymous">
-        <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
         <style>
             body {
                 background-color: #696969 !important;
@@ -24,26 +23,45 @@
         <title>Firebase IoT Demo</title>
     </head>
     <body>
-        <div class="row">
+        <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;">
+            <div class="container">
+              <h1 class="display-4">IoT Demo</h1>
+              <p class="lead">Reading Temperature from a DHT11 Sensor Conected to a NodeMCU Board and using Firebase for full stack</p>
+            </div>
+          </div>
+        <div class="row" style="margin-right: 0px;margin-left: 5px;margin-top: -28px;">
             <div class="col-sm-6"> <!-- Temperature Column -->
-                <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                <div class="card text-white bg-warning mb-3 text-center" style="max-width: 100%;">
                     <div style="font-size: 20px;" class="card-header">Temperature</div>
                     <div class="card-body">
-                        <h1 id="temperature" style="font-size: 75px;" class="card-title">°C</h1>
+                        <h1 id="temperature" style="font-size: 70px;" class="card-title">°C</h1>
                         <p class="card-text">Temperature expressed in Celsius degree.</p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6"> <!-- Humidity Column -->
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div style="font-size: 20px;" class="card-header">Humidity</div>
+                <div class="card text-white bg-primary mb-3 text-center" style="max-width: 100%;">
+                    <div style="font-size: 20px;" class="card-header">Relative Humidity</div>
                     <div class="card-body">
-                        <h1 id="humidity" style="font-size: 75px;" class="card-title"><span>%</span></h1>
+                        <h1 id="humidity" style="font-size: 70px;" class="card-title"><span>%</span></h1>
                         <p class="card-text">Relative humidity, expressed as a percentage.</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="card text-center">
+            <!-- <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div> -->
+            <div class="card-footer text-muted">
+              Developed by Julio Londoño juliolondonogarcia@gmail.com
+            </div>
+          </div>
         <!-- Needed for Bootstrap Material Design -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
@@ -51,8 +69,9 @@
         <!-- Firebase App -->
        
         <!-- Initialize Firebase -->
-        <script src="/__/firebase/init.js"></script>
-        
+        <!-- <script src="/__/firebase/init.js"></script> -->
+        <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
         <script src="app.js"></script>
     </body>
 </html>

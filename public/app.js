@@ -1,16 +1,17 @@
 (function() {
     // Set the configuration for your app
-    var config = {
-        apiKey: "AIzaSyDGPhGJBk2GP-FbJ8WW7Mcae8vAAcMeUkM",
-        authDomain: "iotdemo-ae02f.firebaseapp.com",
-        databaseURL: "https://iotdemo-ae02f.firebaseio.com",
-        projectId: "iotdemo-ae02f",
-        storageBucket: "iotdemo-ae02f.appspot.com",
-        messagingSenderId: "179280005388",
-        appId: "1:179280005388:web:d6d60eed07059f87786129"
+    var firebaseConfig = {
+        apiKey: "xxxx",
+        authDomain: "xxxxrebaseapp.com",
+        databaseURL: "https:/xxx
+        storageBucket: "xxxspot.com",
+        messagingSenderId: "1792xxxxxxx388",
+        appId: "1:1792800xxxx9f87786129",
+        measurementId: "xxxxxxxx9"
     };
-
-    firebase.initializeApp(config);
+    
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
 
     // Get a reference to the database service
     var database = firebase.database();
@@ -20,10 +21,10 @@
     const humElement = document.getElementById('humidity');
 
     // Create temperature database reference
-    const tempRef = database.ref('dht11').child('temperature');
+    const tempRef = database.ref('DHT11').child('Temperature');
 
     // Create humidity database reference
-    const humRef = database.ref('dht11').child('humidity');
+    const humRef = database.ref('DHT11').child('Humidity');
 
     // Sync objects changes
     tempRef.limitToLast(1).on('value', function(snapshot) {
