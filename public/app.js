@@ -1,13 +1,16 @@
 (function() {
     // Set the configuration for your app
+
     var firebaseConfig = {
         apiKey: "xxxx",
         authDomain: "xxxxrebaseapp.com",
-        databaseURL: "https:/xxx
+        databaseURL: "https:/xxx",
         storageBucket: "xxxspot.com",
         messagingSenderId: "1792xxxxxxx388",
         appId: "1:1792800xxxx9f87786129",
         measurementId: "xxxxxxxx9"
+
+    
     };
     
     // Initialize Firebase
